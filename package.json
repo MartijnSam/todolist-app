@@ -1,0 +1,18 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Node.js",
+  "dependencies": {
+    "pg": "^8.2.1",
+    "sequelize": "^5.21.10",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
