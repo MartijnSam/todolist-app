@@ -62,7 +62,7 @@ router.post("/", async (req, res, next) => {
     }
   });
 
-  router.get("/users/:userId/lists", async (req, res, next) => {
+  router.get("/:userId/lists", async (req, res, next) => {
     try {
       const userId = parseInt(req.params.userId);
       const user = await User.findByPk(userId, {
@@ -78,7 +78,7 @@ router.post("/", async (req, res, next) => {
     }
   });
 
-  router.post("/users/:userId/lists", async (req, res, next) => {
+  router.post("/:userId/lists", async (req, res, next) => {
     try {
       const checkUserIdParam = parseInt(req.params.userId);
       const checkUserIdBody = parseInt(req.body.userId);
@@ -96,7 +96,7 @@ router.post("/", async (req, res, next) => {
     }
   });
 
-  router.put("/users/:userId/lists/:listId", async (req, res, next) => {
+  router.put("/:userId/lists/:listId", async (req, res, next) => {
    try {
     const userIdParam = parseInt(req.params.userId);
     const listIdParam = parseInt(req.params.listId)
@@ -125,7 +125,7 @@ router.post("/", async (req, res, next) => {
 }
 });
 
-router.delete("/users/:userId/lists/:listId", async (req, res, next) => {
+router.delete("/:userId/lists/:listId", async (req, res, next) => {
     try {
      const userIdParam = parseInt(req.params.userId);
      const listIdParam = parseInt(req.params.listId)
